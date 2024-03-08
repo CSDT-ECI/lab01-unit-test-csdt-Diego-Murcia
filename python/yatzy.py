@@ -228,3 +228,15 @@ class Yatzy:
             return _2_at * 2 + _3_at * 3
         else:
             return 0
+
+    @staticmethod
+    def crazy_change(dice):
+        sum = 0
+
+        for i in dice:
+            if i % 2 == 0:
+                sum += i * 3
+            else:
+                sum += i * 2
+
+        return sum
